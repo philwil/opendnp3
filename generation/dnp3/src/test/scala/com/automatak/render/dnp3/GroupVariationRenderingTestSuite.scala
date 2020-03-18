@@ -1,8 +1,8 @@
-/*
+/**
  * Copyright 2013-2019 Automatak, LLC
  *
  * Licensed to Green Energy Corp (www.greenenergycorp.com) and Automatak
- * LLC (www.automatak.com) under one or more contributor license agreements. 
+ * LLC (www.automatak.com) under one or more contributor license agreements.
  * See the NOTICE file distributed with this work for additional information
  * regarding copyright ownership. Green Energy Corp and Automatak LLC license
  * this file to you under the Apache License, Version 2.0 (the "License"); you
@@ -20,16 +20,17 @@
 package com.automatak.render.dnp3
 
 import org.junit.runner.RunWith
-import org.scalatest.junit.JUnitRunner
-import org.scalatest.{Matchers, FunSuite}
+import org.scalatest.funsuite.AnyFunSuite
+//import org.scalatest.junit.JUnitRunner
+
 
 import com.automatak.render.dnp3.objects.ObjectGroup
 import com.automatak.render.dnp3.objects.generators._
 import com.automatak.render.cpp.CppIndentation
 
 
-@RunWith(classOf[JUnitRunner])
-class GroupVariationRenderingTestSuite extends FunSuite with Matchers {
+//@RunWith(classOf[JUnitRunner])
+class GroupVariationRenderingTestSuite extends AnyFunSuite {
 
   test("Experiment with rendering") {
 
