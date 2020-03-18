@@ -63,7 +63,7 @@ object AttributeGenerator {
 
     def license = commented(LicenseHeader())
 
-    def writeHeader() {
+    def writeHeader(): Unit = {
 
       def includes : Iterator[String] = Iterator(include(""""opendnp3/gen/GroupVariation.h""""))
 
@@ -74,7 +74,7 @@ object AttributeGenerator {
       writeTo(headerPath)(lines)
     }
 
-    def writeImpl() {
+    def writeImpl(): Unit =  {
       def license = commented(LicenseHeader())
 
       def cases(attr: HasAttribute) : Iterator[String] = ObjectGroup.all.map(og => getCases(og, attr)).flatten.iterator

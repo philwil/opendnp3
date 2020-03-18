@@ -37,7 +37,7 @@ class SwitchModelRenderer[A](fCase: A => String)(fAction: A => String) {
 
     def switch = Iterator("switch(arg)")
 
-    def nonDefaultCases: Iterator[String] = nonDefaults.toIterator.flatMap { c =>
+    def nonDefaultCases: Iterator[String] = nonDefaults.iterator.flatMap { c =>
       Iterator(List("case(", fCase(c), "):").mkString) ++
         indent {
           Iterator("return " + fAction(c) + ";")

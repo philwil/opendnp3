@@ -45,7 +45,7 @@ object CppEnumGenerator {
 
       val renders = intConversions ::: stringConversions
 
-      def writeHeader() {
+      def writeHeader() : Unit = {
         def license = commented(LicenseHeader())
         def includes = cstdint ++ string
         def enum = EnumModelRenderer.render(cfg.model)
@@ -56,9 +56,9 @@ object CppEnumGenerator {
         println("Wrote: " + headerPath(cfg.model))
       }
 
-      def writeImpl() {
+      def writeImpl() : Unit = {
         def license = commented(LicenseHeader())
-        def funcs = renders.flatMap(r => r.impl.render(cfg.model) ++ space).toIterator
+        def funcs = renders.flatMap(r => r.impl.render(cfg.model) ++ space).iterator
         def inc = List(quoted(String.format(incFormatString, headerName(cfg.model))), bracketed("stdexcept")).map(i => include(i))
         def lines = license ++ space ++ inc ++ space ++ namespace(cppNamespace)(funcs)
 
@@ -69,7 +69,7 @@ object CppEnumGenerator {
         }
       }
 
-      def writePrivateHeader()  {
+      def writePrivateHeader() : Unit = {
         def license = commented(LicenseHeader())
         def includes = Iterator(include(quoted(String.format(incFormatString, headerName(cfg.model))))) ++ littleEndian
         def funcs = EnumSerialization.render(cfg.model)

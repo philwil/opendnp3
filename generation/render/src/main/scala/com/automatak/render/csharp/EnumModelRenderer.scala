@@ -43,7 +43,7 @@ object EnumModelRenderer extends ModelRenderer[EnumModel] {
 
     def definitions : Iterator[String] = commaDelimited(enum.allValues.map(pair(enum.render)).iterator)
 
-    summary(enum.comments.toIterator) ++
+    summary(enum.comments.iterator) ++
     header ++ bracket {
       merge(comments, definitions)
     }

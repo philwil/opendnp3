@@ -34,7 +34,7 @@ object EnumModelRenderer extends ModelRenderer[EnumModel] {
     def definitions : Iterator[String] = commaDelimited(enum.allValues.map(pair(enum.render)).iterator)
 
     def summary = if(enum.comments.isEmpty) Iterator.empty else {
-      Iterator("/**") ++ indent(enum.comments.toIterator) ++ Iterator("*/")
+      Iterator("/**") ++ indent(enum.comments.iterator) ++ Iterator("*/")
     }
 
     summary ++

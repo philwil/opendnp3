@@ -19,17 +19,12 @@
  */
 package com.automatak.render.dnp3
 
-import org.junit.runner.RunWith
 import org.scalatest.funsuite.AnyFunSuite
-//import org.scalatest.junit.JUnitRunner
-
 
 import com.automatak.render.dnp3.objects.ObjectGroup
 import com.automatak.render.dnp3.objects.generators._
 import com.automatak.render.cpp.CppIndentation
 
-
-//@RunWith(classOf[JUnitRunner])
 class GroupVariationRenderingTestSuite extends AnyFunSuite {
 
   test("Experiment with rendering") {

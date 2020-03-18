@@ -70,7 +70,7 @@ object EnumModelRenderer extends ModelRenderer[EnumModel] {
       }
     }
 
-    summary(enum.comments.toIterator) ++
+    summary(enum.comments.iterator) ++
     header ++ bracket {
       merge(comments, definitions) ++ space ++
       id ++ space ++  toType ++

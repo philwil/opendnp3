@@ -88,11 +88,11 @@ object GroupVariationFileGenerator {
     }
 
     def headerIncludes(group: ObjectGroup): Iterator[String] = {
-      group.objects.flatMap(_.headerIncludes).distinct.map(x => "#include %s".format(x)).toIterator
+      group.objects.flatMap(_.headerIncludes).distinct.map(x => "#include %s".format(x)).iterator
     }
 
     def implIncludes(group: ObjectGroup): Iterator[String] = {
-      group.objects.flatMap(_.implIncludes).distinct.map(x => "#include %s".format(x)).toIterator
+      group.objects.flatMap(_.implIncludes).distinct.map(x => "#include %s".format(x)).iterator
     }
 
     ObjectGroup.all.foreach { g =>
