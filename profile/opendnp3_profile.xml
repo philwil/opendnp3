@@ -980,10 +980,10 @@
         <!--1.9.1) Number of Class 1 Events-->
         <numberOfClassOneEvents>
           <capabilities>
-            <notUsedToTriggerEvents />
+            <fixed>1</fixed>
           </capabilities>
           <currentValue>
-            <notUsedToTriggerEvents />
+            <value>1</value>
           </currentValue>
           <!--Configuration Methods-->
           <methods />
@@ -991,10 +991,10 @@
         <!--1.9.2) Number of Class 2 Events-->
         <numberOfClassTwoEvents>
           <capabilities>
-            <notUsedToTriggerEvents />
+            <fixed>1</fixed>
           </capabilities>
           <currentValue>
-            <notUsedToTriggerEvents />
+            <value>1</value>
           </currentValue>
           <!--Configuration Methods-->
           <methods />
@@ -1002,10 +1002,10 @@
         <!--1.9.3) Number of Class 3 Events-->
         <numberOfClassThreeEvents>
           <capabilities>
-            <notUsedToTriggerEvents />
+            <fixed>1</fixed>
           </capabilities>
           <currentValue>
-            <notUsedToTriggerEvents />
+            <value>1</value>
           </currentValue>
           <!--Configuration Methods-->
           <methods />
@@ -1024,10 +1024,10 @@
         <!--1.9.5) Hold Time After Class 1 Event (ms)-->
         <holdTimeAfterClassOneEvent>
           <capabilities>
-            <notUsedToTriggerEvents />
+            <fixed>0</fixed>
           </capabilities>
           <currentValue>
-            <notUsedToTriggerEvents />
+            <value>0</value>
           </currentValue>
           <!--Configuration Methods-->
           <methods />
@@ -1035,10 +1035,10 @@
         <!--1.9.6) Hold Time After Class 2 Event (ms)-->
         <holdTimeAfterClassTwoEvent>
           <capabilities>
-            <notUsedToTriggerEvents />
+            <fixed>0</fixed>
           </capabilities>
           <currentValue>
-            <notUsedToTriggerEvents />
+            <value>0</value>
           </currentValue>
           <!--Configuration Methods-->
           <methods />
@@ -1046,10 +1046,10 @@
         <!--1.9.7) Hold Time After Class 3 Event (ms)-->
         <holdTimeAfterClassThreeEvent>
           <capabilities>
-            <notUsedToTriggerEvents />
+            <fixed>0</fixed>
           </capabilities>
           <currentValue>
-            <notUsedToTriggerEvents />
+            <value>0</value>
           </currentValue>
           <!--Configuration Methods-->
           <methods />
