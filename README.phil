@@ -1,0 +1,14 @@
+mkdir openDMP3
+ cd openDMP3/
+ git clone --recursive https://github.com/automatak/rpi-dnp3-gpio.git
+ echo "git clone --recursive https://github.com/automatak/rpi-dnp3-gpio.git" > getit
+ cd rpi-dnp3-gpio/
+ CXX=g++ cmake . -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
+ make
+ cd ../
+ git clone https://github.com/dnp3/opendnp3.git
+ 1571  cmake ../opendnp3/
+ 1572  make
+ 1578  git submodule update --init --recursive
+ 1579  make
+ 1580  sudo make install 
